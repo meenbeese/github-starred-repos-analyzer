@@ -33,12 +33,12 @@
 
         const totalStarredRepos = repos.length;
         console.log(`\nTotal Starred Repos: ${totalStarredRepos}`);
-        console.log('\nLanguage        Count');
-        console.log('---------------------');
+        console.log('\nLanguage            Count');
+        console.log('-------------------------');
 
         const sortedLanguages = Object.entries(languageCount).sort((a, b) => b[1] - a[1]);
         sortedLanguages.forEach(([language, count]) => {
-            console.log(`${language.padEnd(15)} ${count}`);
+            console.log(`${language.padEnd(20)} ${count}`);
         });
     }
 
